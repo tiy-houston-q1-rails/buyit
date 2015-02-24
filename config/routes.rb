@@ -3,6 +3,13 @@ Rails.application.routes.draw do
 
   get 'products/:id' => "products#show", as: :product
 
+  # cart
+
+  post "/cart" => "cart#add", as: :add_to_cart
+  get "/cart" => "cart#show", as: :cart
+  patch "/cart/item/:id" => "cart#update", as: :cart_item
+
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
