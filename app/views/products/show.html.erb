@@ -1,0 +1,11 @@
+<h1><%= @product.name %> <small><%= number_to_currency @product.price_in_dollars %></small></h1>
+
+<div class="row">
+  <div class="col-xs-6">
+    <%= image_tag @product.photo.large, class: "img-responsive" %>
+  </div>
+  <div class="col-xs-6">
+    <p><%= @product.description %></p>
+    <button class="btn btn-primary btn-block btn-lg">Add To Cart</button>
+  </div>
+</div>

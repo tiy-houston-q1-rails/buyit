@@ -1,0 +1,12 @@
+<div class="page-title">
+  <h1>BuyIt <small>Because they're awesome</small></h1>
+</div>
+<% @products.each do |product| %>
+  <div class="col-xs-6 col-sm-4">
+    <h2><%= product.name %></h2>
+    <%= link_to product do %>
+      <%= image_tag product.photo.thumb, class: "img-responsive" %>
+    <% end %>
+    <%= number_to_currency product.price_in_dollars %>
+  </div>
+<% end %>
