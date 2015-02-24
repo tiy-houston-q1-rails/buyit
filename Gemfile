@@ -42,9 +42,12 @@ group :development, :test do
 end
 
 gem 'pry'
+gem 'simple_form', '3.1.0.rc2'
 gem 'rails_admin'
 gem 'bootstrap-sass'
 gem 'fog'
 gem 'carrierwave'
 gem 'dotenv-rails'
 gem 'mini_magick'
+gem 'payola-payments'
+gem "active_model_serializers" # use the best json eva

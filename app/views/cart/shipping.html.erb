@@ -1,0 +1,13 @@
+<div class="page-title">
+  <h1>Where you ship this?</h1>
+</div>
+
+
+<%= simple_form_for @cart, url: update_shipping_path do |f| %>
+  <%= f.input :address_line_1 %>
+  <%= f.input :address_line_2 %>
+  <%= f.input :city %>
+  <%= f.input :state, maxlength: 2 %>
+  <%= f.input :zip %>
+  <%= f.submit class: "btn btn-primary btn-lg" %>
+<% end %>
