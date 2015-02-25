@@ -50,4 +50,5 @@ gem 'carrierwave'
 gem 'dotenv-rails'
 gem 'mini_magick'
 gem 'payola-payments'
-gem "active_model_serializers" # use the best json eva
+gem "active_model_serializers" # use the best json evar
+gem 'friendly_id', '~> 5.1.0'

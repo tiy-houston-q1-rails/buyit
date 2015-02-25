@@ -1,3 +1,6 @@
+<%= content_for(:title) do %>
+  <%= @product.name %>
+<% end %>
 <h1><%= @product.name %> <small><%= number_to_currency @product.price_in_dollars %></small></h1>
 
 <div class="row">
